@@ -1,0 +1,9 @@
+{% if page.is_homepage %}
+  {% extends "landing.html" %}
+{% elif page.title == "About" %}
+  {% extends "about.html" %}
+{% elif page.title == "Download" %}
+  {% extends "download.html" %}
+{% else %}
+  {% extends "base.html" %}
+{% endif %}
